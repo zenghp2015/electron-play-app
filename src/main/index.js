@@ -1,10 +1,16 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import path from 'node:path'
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
   app.quit();
 }
+
+
+ipcMain.on('app:getGPUInfo:basic', async (event, ...args) => {
+  console.log(event, args)
+  console.log(await app.getGPUInfo('basic'))
+})
 
 const createWindow = () => {
   // Create the browser window.
