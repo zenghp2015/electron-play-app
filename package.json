@@ -1,7 +1,7 @@
 {
   "name": "electron-play-app",
   "productName": "electron-play-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.4.2",
     "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
     "@electron-forge/maker-squirrel": "^6.4.2",
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
