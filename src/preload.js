@@ -3,7 +3,9 @@
 
 import { contextBridge } from 'electron'
 
-contextBridge.exposeInMainWorld('myAPI', {
+const sdk = {
   desktop: true,
   isElectron: true
-})
+}
+
+contextBridge.exposeInMainWorld('electron', sdk)
