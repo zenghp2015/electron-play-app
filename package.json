@@ -3,7 +3,7 @@
   "productName": "electron-play-app",
   "version": "0.0.1",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -27,6 +27,7 @@
     "@electron-forge/maker-squirrel": "^6.4.2",
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
+    "@electron-forge/plugin-vite": "^6.4.2",
     "electron": "^27.0.3"
   }
 }
