@@ -3,7 +3,7 @@
   "productName": "electron-play-app",
   "version": "0.0.1",
   "description": "My Electron application description",
-  "main": ".vite/build/main.js",
+  "main": ".vite/main/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -28,7 +28,9 @@
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
     "@electron-forge/plugin-vite": "^6.4.2",
+    "@vitejs/plugin-vue": "^4.4.0",
     "electron": "^27.0.3",
-    "electron-forge-plugin-vite": "^0.4.0"
+    "electron-forge-plugin-vite": "^0.4.0",
+    "vue": "^3.3.8"
   }
 }

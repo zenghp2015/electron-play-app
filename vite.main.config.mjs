@@ -1,3 +1,4 @@
+import path from 'node:path'
 import { defineConfig } from 'vite';
 import { restart } from 'electron-forge-plugin-vite/plugin';
 
@@ -11,6 +12,7 @@ export default defineConfig({
     mainFields: ['module', 'jsnext:main', 'jsnext'],
   },
   build: {
+    outDir: path.join(__dirname, '.vite/main'),
     rollupOptions: {
       external: [
         'serialport',
