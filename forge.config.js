@@ -4,6 +4,7 @@ module.exports = {
   },
   rebuildConfig: {},
   makers: [
+    // https://www.electronforge.io/import-existing-project#setting-up-forge-manually
     {
       name: '@electron-forge/maker-squirrel',
       config: {},
@@ -23,6 +24,7 @@ module.exports = {
   ],
   plugins: [
     {
+      // https://www.electronforge.io/config/plugins/auto-unpack-natives
       name: '@electron-forge/plugin-auto-unpack-natives',
       config: {},
     },
